@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var width  = $(document).width() - 430;
+				
+		$("#ui_horizontal_menu_container").width(width);
+	});
+</script>
+
+<title>Untitled Document</title>
+<style type="text/css">
+
+* {margin:0;padding:0;}
+
+html, body {
+	height: 100%;
+}
+
+#ui_main_container {
+	width: 100%;
+	height: 100%;
+	margin:0;
+}
+
+#ui_right_container, #ui_left_container, #ui_center_container {
+	height: 100%;
+}
+
+#ui_right_container {
+	float: right; 
+	width: 200px;
+	border-left: 1px solid #B3BEC4;
+	-moz-box-shadow: 0px 0px 25px #C3C5C7;
+	-webkit-box-shadow: 0px 0px 25px #C3C5C7;
+}
+
+#ui_left_container {
+	float: left; 
+	width: 200px;
+	border-right: 1px solid #B3BEC4;
+	-moz-box-shadow: 0px 0px 25px #C3C5C7;
+	-webkit-box-shadow: 0px 0px 25px #C3C5C7;
+}
+
+#ui_center_container {
+	border: 3px #666;
+}
+
+#ui_horizontal_menu_container {
+	margin-top: 200px;
+	margin-left: 210px;
+	background-color: black;
+	position: absolute;
+	left: 3px;
+	top: -49px;
+}
+
+</style>
+</head>
+<body>
+<div id="ui_main_container">
+    <div id="ui_right_container"></div>
+    <div id="ui_left_container"></div>
+    <div id="ui_center_container">
+    	<div id="ui_horizontal_menu_container">
+        	hola
+        </div>
+    </div>
+</div>
+</body>
+</html>
